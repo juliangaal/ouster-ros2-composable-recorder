@@ -44,8 +44,9 @@ def generate_launch_description():
         plugin='ouster_ros::OusterSensor',
         name='os_sensor',
         namespace=ouster_ns,
-        parameters=[params_file,
         {'auto_start': auto_start}]
+        parameters=[params_file],
+        extra_arguments=[{"use_intraprocess_comms": True}]
     )
 
     os_cloud = ComposableNode(
@@ -53,7 +54,8 @@ def generate_launch_description():
         plugin='ouster_ros::OusterCloud',
         name='os_cloud',
         namespace=ouster_ns,
-        parameters=[params_file]
+        parameters=[params_file],
+        extra_arguments=[{"use_intraprocess_comms": True}]
     )
 
     os_image = ComposableNode(
@@ -61,7 +63,8 @@ def generate_launch_description():
         plugin='ouster_ros::OusterImage',
         name='os_image',
         namespace=ouster_ns,
-        parameters=[params_file]
+        parameters=[params_file],
+        extra_arguments=[{"use_intraprocess_comms": True}]
     )
 
     os_container = ComposableNodeContainer(

@@ -1,3 +1,15 @@
+=================
+
+This fork makes the Ouster ros2 driver work with a composable recorder (pre-jazzy)
+
+* Based on [ouster-ros](https://github.com/ouster-lidar/ouster-ros)
+* [Composable recorder (< jazzy)](https://github.com/berndpfrommer/rosbag2_composable_recorder/tree/master) added
+* Cherry-picks from [automatix/ouster-ros](https://github.com/fireflyautomatix/ouster-ros)
+  * `8861404`
+  * `c632244` to fix [#193](https://github.com/ouster-lidar/ouster-ros/pull/193)
+
+=================
+
 # Official ROS driver for Ouster sensors
 
 [ROS1 (melodic/noetic)](https://github.com/ouster-lidar/ouster-ros/tree/master) |

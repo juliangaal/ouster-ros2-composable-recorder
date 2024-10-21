@@ -3,4 +3,4 @@
 	url = https://github.com/ouster-lidar/ouster_example.git
 [submodule "rosbag2_composable_recorder"]
 	path = rosbag2_composable_recorder
-	url = git@github.com:berndpfrommer/rosbag2_composable_recorder.git
+	url = https://github.com/berndpfrommer/rosbag2_composable_recorder

@@ -18,6 +18,7 @@ RUN set -xue \
     python3-rosdep          \
     python3-rospkg          \
     python3-bloom           \
+    ros-${ROS_DISTRO}-geometry-msgs \
     python3-colcon-common-extensions
 
 # Set up non-root build user
